@@ -1,0 +1,16 @@
+chardet==2.2.1
+Django==1.10
+django-ckeditor==5.0.3
+iniparse==0.4
+kitchen==1.2.1
+pexpect==3.1
+Pillow==3.3.1
+pycurl==7.19.5.1
+pygpgme==0.3
+pyliblzma==0.5.3
+pyxattr==0.5.3
+pyxdg==0.25
+rpm-python==4.13.0rc1
+six==1.9.0
+urlgrabber==3.10.1
+yum-metadata-parser==1.1.4

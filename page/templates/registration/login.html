@@ -1,0 +1,16 @@
+{%extends "page/base.html"%}
+{%block content%}
+	<h1>Auth</h1>
+	{%if user.is_authenticated%}
+		Authed
+	{%else%}
+		{{form.non_field_errors}}
+		<form method="post" action="">
+			{%csrf_token%}
+			{{form.as_p}}
+			<button>Login</button>
+		</form>
+		<ul>
+		</ul>
+	{%endif%}
+{%endblock%}

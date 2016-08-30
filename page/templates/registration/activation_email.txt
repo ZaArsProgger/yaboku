@@ -1,0 +1,4 @@
+Registration on site
+
+For actiovation click on <a href="{{site}}/accounts/activate/{{activation_key}}/">{{site}}/accounts/activate/{{activation_key}}/</a>
+Thanks!

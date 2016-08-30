@@ -1,0 +1,8 @@
+{% load staticfiles %}
+{% if character %}
+  <p>{{character.name}}</p>
+  <img src="{% static character.image %}" alt="" />
+  <img src="{{ character.image.url }}" alt="" />
+{% else %}
+  <p>character no found</p>
+{% endif %}

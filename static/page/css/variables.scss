@@ -1,0 +1,67 @@
+$prefix: y-;
+
+$as-button: pointer;
+
+$z-index-min: 100;
+
+// Sizes
+
+$line-min-height: 50px;
+
+$content-min-height: 100vh;
+$content-padding-top: $line-min-height;
+$content-padding-bottom: $line-min-height;
+$content-margin-top: -$line-min-height;
+$content-margin-bottom: -$line-min-height;
+
+$banner-small-height: 50vh;
+$banner-medium-height: 300px;
+$banner-large-height: 400px;
+$banner-xlarge-height: 600px;
+
+$banner-background-size: cover;
+$banner-background-repeat: no-repeat;
+$banner-background-position: center center;
+$banner-background-color: #7986cb;
+
+$action-block-width: 100%;
+$action-block-max-width: 700px;
+
+
+// Colors
+
+$bg: #ffffff;
+$bg-indigo: #3f51b5;
+$bg-indigo-secondary: #4f61c5;
+$tile-bg: #e8eaf6;
+
+$link-color: #e8eaf6;
+$link-hover-color: lighten($link-color, 10%);
+
+$text-color: rgba(51,51,51,1);
+
+$btn-danger-background-color: #cf3f2f;
+$btn-success-background-color: #3faf2f;
+
+
+// Shadow
+
+$shadow-color: rgba(0,0,0,0.2);
+$shadow-big-color: rgba(0,0,0,0.6);
+$shadow: 0px 1px 2px $shadow-color;
+$shadow-big: 1px 2px 3px $shadow-big-color;
+
+// Action
+
+$action-btn-background: #f44336;
+$action-btn-type: rounded;
+$action-btn-border-radius: 50%;
+
+$action-btn-position: fixed;
+$action-btn-left: auto;
+$action-btn-right: 30px;
+$action-btn-top: auto;
+$action-btn-bottom: 30px;
+$action-btn-height: $line-min-height;
+$action-btn-width: $line-min-height;
+$action-btn-shadow: 0 2px 4px $shadow-color;

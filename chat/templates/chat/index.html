@@ -1,0 +1,25 @@
+{% extends 'page/index.html' %}
+{% load bootstrap3 %}
+
+{% block action_form_action %}{% url 'chat:send' %}{% endblock %}
+
+{% block action_form_fields %}
+  {% if form %}
+    {% for field in form %}
+      {% if not field.is_hidden %}
+        <textarea class="y-field"  name="{{field.html_name}}" placeholder="{{field.help_text}}">
+          
+        </textarea>
+      {% else %}
+       {{field}}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endblock %}
+
+{% block content_item %}
+  {% include 'chat/base_messages.html' %}
+  {% include 'chat/pagination.html' %}
+{% endblock %}
+
+{%block debug%}{%endblock%}

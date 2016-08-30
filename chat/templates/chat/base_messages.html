@@ -1,0 +1,38 @@
+{% if messages %}
+  {% for message in messages %}
+	<div class="col-xs-12">
+		<div class="y-tile">
+			{{message.character.name}}
+			<div class="clearfix"></div>
+
+			 <div class="row y-tiles">
+				 <div class="col-xs-2">
+					 <div class="y-tyle">
+						 <div class="y-image--wrapper">
+							 <div class="y-image--image">
+							    <img class="img-responsive" src="{{message.character.image.url}}" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-10">
+		    	
+					<div class="y-tyle">
+						<span>{{message.created}}</span>
+			    		<div>
+							{{ message.message }}
+			    		</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+  {% endfor %}
+{% else %}
+	<div class="col-xs-12">
+	    <div class="y-tile">
+	    	No messages	
+	    </div>
+	</div>
+{% endif %}

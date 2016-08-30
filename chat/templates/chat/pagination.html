@@ -1,0 +1,13 @@
+{% if pagination %}
+<ul>
+  {% for link in pagination %}
+    <li>
+    {% if link.is_current is not True %}
+      <a href="{% url 'chat:index' %}{{link.id}}">Page {{link.id}}</a>
+    {% else %}
+      {{link.id}}
+    {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% endif %}

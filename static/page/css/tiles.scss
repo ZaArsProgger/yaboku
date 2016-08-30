@@ -1,0 +1,23 @@
+@import './variables.scss';
+
+$tiles-row-init-margin-right: 0;
+$tiles-row-init-padding: 15px;
+
+$tiles-tile-init-padding: 0;
+$tile-tile-init-margin: 0 -15px 15px 0;
+
+.#{$prefix}tiles, .#{$prefix}tiles.row {
+  margin-right: $tiles-row-init-margin-right;
+  padding: $tiles-row-init-padding;
+  .#{$prefix}tile {
+    padding: $tiles-tile-init-padding;
+    min-height: 50px;
+    background: $tile-bg;
+    margin: $tile-tile-init-margin;
+
+    box-shadow: $shadow;
+    & {
+      box-shadow: none;
+    }
+  }
+}

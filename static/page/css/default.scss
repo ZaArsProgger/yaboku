@@ -1,0 +1,147 @@
+@import './bootstrap-sass-master/assets/stylesheets/_bootstrap.scss';
+@import './variables.scss';
+@import './tiles.scss';
+/*@import './default.css';  */
+
+body {
+  background: $bg;
+}
+ 
+.#{$prefix}header {
+  background: $bg-indigo;
+  min-height: $line-min-height;
+
+  z-index: $z-index-min;
+}
+
+.#{$prefix}footer {
+  background: darken($bg-indigo, 20%);
+  min-height: $line-min-height;
+
+  z-index: $z-index-min;
+}
+
+.#{$prefix}content--wrapper {
+  position: relative;
+
+  min-height: $content-min-height;
+  padding-top: $content-padding-top;
+  padding-bottom: $content-padding-top;
+  margin-top: $content-margin-top;
+  margin-bottom: $content-margin-bottom;
+
+  .#{$prefix}banner {
+    background-color: $banner-background-color;
+    background-size: $banner-background-size;
+    background-position: $banner-background-position;
+    background-repeat: $banner-background-repeat;
+
+    @media (max-height: 560px) {
+      height: $banner-small-height;
+    }
+    @media (min-height: 560px) and (max-height: 800px) {
+      height: $banner-medium-height;
+    }
+    @media (min-height: 800px) and (max-height: 1000px) {
+      height: $banner-large-height;
+    }
+    @media (min-height: 1000px) {
+      height: $banner-xlarge-height;
+    }
+  }
+
+}
+
+.#{$prefix}action-btn {
+  background: $action-btn-background;
+  position: $action-btn-position;
+  width: $action-btn-width;
+  height: $action-btn-height;
+  top: $action-btn-top;
+  right: $action-btn-right;
+  bottom: $action-btn-bottom;
+  left: $action-btn-left;
+  box-shadow: $action-btn-shadow;
+  cursor: $as-button;
+  @if $action-btn-type == rounded {
+    border-radius: $action-btn-border-radius;
+  }
+}
+
+.#{$prefix}action-block {
+  position: fixed;
+  background-color: $bg-indigo-secondary;
+
+  top: 0;
+  left: 100vw;
+  width: 100vw;
+  height: 100vh;
+  //bottom: 0;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  z-index: 1;
+
+  .#{$prefix}action-block__content {
+    margin: 20vh auto;
+
+    position: relative;
+    width: $action-block-width;
+    max-width: $action-block-max-width;
+    //right: -$action-block-width;
+    box-shadow: $action-btn-shadow;
+    min-height: $line-min-height;
+    background-color: $bg-indigo;
+
+    padding: 15px;
+
+    z-index: 1000;
+
+    .#{$prefix}form {
+      .#{$prefix}field {
+        width: 100%;
+        height: $line-min-height;
+        margin-bottom: 10px;
+        box-shadow: $shadow-big
+      }
+      .#{$prefix}button {
+        width: 100%;
+        height: $line-min-height;
+
+        color: white;
+        border: none;
+
+        box-shadow: $shadow-big;
+      }
+      .#{$prefix}button--danger {
+        background-color: $btn-danger-background-color;
+      }
+      .#{$prefix}button--success {
+        background-color: $btn-success-background-color;
+      }
+    }
+  }
+}
+
+.#{$prefix}image--wrapper {
+  width: 100%;
+  padding: 50%;
+  position: relative;
+  overflow: hidden;
+
+  .#{$prefix}image--image {
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    top: 0;
+    left: 0;    
+  }
+
+}
+
+.y-image--wrapper {
+  box-shadow: $shadow;
+}

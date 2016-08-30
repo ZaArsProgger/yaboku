@@ -1,0 +1,13 @@
+.y-tiles, .y-tiles.row {
+  margin-right: 0;
+  padding: 15px; }
+  .y-tiles .y-tile, .y-tiles.row .y-tile {
+    padding: 0;
+    min-height: 50px;
+    background: #e8eaf6;
+    margin: 0 -15px 15px 0;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2); }
+    .y-tiles .y-tile, .y-tiles.row .y-tile {
+      box-shadow: none; }
+
+/*# sourceMappingURL=tiles.css.map */
